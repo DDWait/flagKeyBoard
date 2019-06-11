@@ -33,6 +33,9 @@
 		EEA8963822A89B9800531CD5 /* YJFlagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA8963722A89B9800531CD5 /* YJFlagView.xib */; };
 		EEA8963B22A89BCE00531CD5 /* YJFlagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8963A22A89BCE00531CD5 /* YJFlagItem.m */; };
 		EEA8963F22A8A64C00531CD5 /* YJDateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8963E22A8A64C00531CD5 /* YJDateTextField.m */; };
+		EEB1F0B522AFCCBC0053FA93 /* YJCityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB1F0B422AFCCBC0053FA93 /* YJCityTextField.m */; };
+		EEB1F0B722AFCD100053FA93 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEB1F0B622AFCD100053FA93 /* provinces.plist */; };
+		EEB1F0BA22AFCD2D0053FA93 /* YJCityItm.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB1F0B922AFCD2D0053FA93 /* YJCityItm.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,11 @@
 		EEA8963A22A89BCE00531CD5 /* YJFlagItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJFlagItem.m; sourceTree = "<group>"; };
 		EEA8963D22A8A64C00531CD5 /* YJDateTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDateTextField.h; sourceTree = "<group>"; };
 		EEA8963E22A8A64C00531CD5 /* YJDateTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJDateTextField.m; sourceTree = "<group>"; };
+		EEB1F0B322AFCCBC0053FA93 /* YJCityTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCityTextField.h; sourceTree = "<group>"; };
+		EEB1F0B422AFCCBC0053FA93 /* YJCityTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCityTextField.m; sourceTree = "<group>"; };
+		EEB1F0B622AFCD100053FA93 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		EEB1F0B822AFCD2D0053FA93 /* YJCityItm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCityItm.h; sourceTree = "<group>"; };
+		EEB1F0B922AFCD2D0053FA93 /* YJCityItm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCityItm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,7 @@
 		EEA895FA22A89A6D00531CD5 /* 国旗键盘 */ = {
 			isa = PBXGroup;
 			children = (
+				EEB1F0B222AFCCA40053FA93 /* CityKeyboard */,
 				EEA8963C22A8A62400531CD5 /* DateKeyboard */,
 				EEA8961122A89AC800531CD5 /* FlagKeyboard */,
 				EEA895FB22A89A6D00531CD5 /* AppDelegate.h */,
@@ -161,6 +170,18 @@
 				EEA8963E22A8A64C00531CD5 /* YJDateTextField.m */,
 			);
 			path = DateKeyboard;
+			sourceTree = "<group>";
+		};
+		EEB1F0B222AFCCA40053FA93 /* CityKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EEB1F0B622AFCD100053FA93 /* provinces.plist */,
+				EEB1F0B322AFCCBC0053FA93 /* YJCityTextField.h */,
+				EEB1F0B422AFCCBC0053FA93 /* YJCityTextField.m */,
+				EEB1F0B822AFCD2D0053FA93 /* YJCityItm.h */,
+				EEB1F0B922AFCD2D0053FA93 /* YJCityItm.m */,
+			);
+			path = CityKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +244,7 @@
 			files = (
 				EEA8960822A89A7400531CD5 /* LaunchScreen.storyboard in Resources */,
 				EEA8963822A89B9800531CD5 /* YJFlagView.xib in Resources */,
+				EEB1F0B722AFCD100053FA93 /* provinces.plist in Resources */,
 				EEA8962A22A89B5B00531CD5 /* hanguo.gif in Resources */,
 				EEA8960522A89A7400531CD5 /* Assets.xcassets in Resources */,
 				EEA8962B22A89B5B00531CD5 /* helan.gif in Resources */,
@@ -250,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB1F0BA22AFCD2D0053FA93 /* YJCityItm.m in Sources */,
 				EEA8960022A89A6D00531CD5 /* ViewController.m in Sources */,
+				EEB1F0B522AFCCBC0053FA93 /* YJCityTextField.m in Sources */,
 				EEA8963622A89B8D00531CD5 /* YJFlagView.m in Sources */,
 				EEA8960B22A89A7400531CD5 /* main.m in Sources */,
 				EEA8963B22A89BCE00531CD5 /* YJFlagItem.m in Sources */,

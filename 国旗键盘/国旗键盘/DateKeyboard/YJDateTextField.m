@@ -10,7 +10,7 @@
 
 
 @interface YJDateTextField ()<UITextFieldDelegate>
-
+@property (nonatomic,strong)UIDatePicker *datePicker;
 @end
 
 @implementation YJDateTextField
@@ -40,6 +40,7 @@
     
     self.inputView = datePicker;
     self.delegate = self;
+    self.datePicker = datePicker;
 }
 
 -(void)dateChange:(UIDatePicker *)datePicker
@@ -53,5 +54,10 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     return NO;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [self dateChange:self.datePicker];
 }
 @end

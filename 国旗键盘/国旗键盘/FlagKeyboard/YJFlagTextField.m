@@ -12,6 +12,7 @@
 
 @interface YJFlagTextField ()<UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 @property (nonatomic,strong) NSArray *flagDate;
+@property (nonatomic,strong) UIPickerView *pickerView;
 @end
 
 @implementation YJFlagTextField
@@ -55,6 +56,7 @@
     pickerView.delegate = self;
     self.inputView = pickerView;
     self.delegate = self;
+    self.pickerView = pickerView;
 }
 //多少列
 - (NSInteger)numberOfComponentsInPickerView:(nonnull UIPickerView *)pickerView
@@ -91,7 +93,7 @@
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    self.text = @"中国";
+    [self pickerView:self.pickerView didSelectRow:0 inComponent:0];
 }
 
 @end
